@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ГУРМАН ИРК</title>
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="style/itc-slider.css">
+	<link rel="stylesheet" href="style/accordion.css">
+	<link rel="stylesheet" href="style/bootstrap.css">
+</head>
+
+<body>
+	<header class="p-3 bg-dark text-white">
+		<div class="container">
+		  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+			<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+			  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Бутстрап"><use xlink:href="#bootstrap"></use></svg>
+			</a>
+	
+			<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+			  <li><a href="#" class="nav-link px-2 text-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Дом</font></font></a></li>
+			  <li><a href="#" class="nav-link px-2 text-white"> <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Функции</font></font></a></li>
+			  <li><a href="#" class="nav-link px-2 text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Цены</font></font></a></li>
+			  <li><a href="#" class="nav-link px-2 text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Часто задаваемые вопросы</font></font></a></li>
+			  <li><a href="#" class="nav-link px-2 text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">О</font></font></a></li>
+			</ul>
+	
+			<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+			  <input type="search" class="form-control form-control-dark" placeholder="Поиск..." aria-label="Поиск">
+			</form>
+	
+			<div class="text-end">
+			  <button type="button" class="btn btn-outline-light me-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Авторизоваться</font></font></button>
+			  <button type="button" class="btn btn-warning"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Зарегистрироваться</font></font></button>
+			</div>
+		  </div>
+		</div>
+	  </header>
+	<header class="header">
+		<div class="container">
+			<nav class="nav">
+				<h4 class="logo">
+					планета бибизьян
+				</h4>
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#" class="nav__link"> остров мартышек
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link"> ммммммм бананчики
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link"> востание мартышек
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link"> басыдашижуз
+						</a>
+					</li>
+				</ul>
+				<div class="burger" onclick=" burgerClick()">
+					<div class="burger__line burger__line_1"></div>
+					<div class="burger__line burger__line_2"></div>
+					<div class="burger__line burger__line_3"></div>
+
+				</div>
+			</nav>
+			<button id="btn-menu" class="btn_menu"> Меню</button>
+			<div id="menu" class="header__menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#"> вход</a></li>
+					<li class="menu__item"><a href="#"> акции</a></li>
+					<li class="menu__item"> <a href="#"> реклама</a></li>
+					<li class="menu__item"> <a href="#"> корзина</a></li>
+					<li class="menu__item">
+						<div class="theme">
+							<h4 class="theme__titlt">
+								темы
+							</h4>
+							<ul class="theme__list">
+								<li class="theme__item">
+									<div class="theme__light" onclick="choiceLight()"></div>
+								</li>
+								<li class="theme__item">
+									<div class="theme__dark" onclick="choiceDark()"></div>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+
+
+
+
+
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="tovar">
+			<div class="container">
+				<div class="tovar__content">
+
+					<div class="tovar__info">
+						<h1 class="tovar__title">
+							мартышка
+						</h1>
+						<div class="itc-slider" data-slider="itc-slider">
+							<div class="itc-slider-wrapper">
+								<div class="itc-slider-items">
+									<div class="itc-slider-item">
+										<img src="img/BUBUZIANA.jpg" class="tovar_img">
+									</div>
+									<div class="itc-slider-item">
+										<img src="img/monkey.jpg" class="tovar_img">
+									</div>
+									<div class="itc-slider-item">
+										<img src="img/mokey2.jpeg" class="tovar_img">
+									</div>
+								</div>
+							</div>
+							<!-- Кнопки для перехода к предыдущему и следующему слайду -->
+							<button class="itc-slider-btn itc-slider-btn-prev"></button>
+							<button class="itc-slider-btn itc-slider-btn-next"></button>
+
+						</div>
+						<div class="card" style="width: 18rem;">
+							<img src="https://surronshop.world/cdn/shop/products/IMG_4053_2.jpg?v=1677422041&width=1445" class="card-img-top" alt="...">
+							<div class="card-body">
+							  <h5 class="card-title"> абугагага</h5>
+							  <p class="card-text">сурон топ.</p>
+							</div>
+							<ul class="list-group list-group-flush">
+							  <li class="list-group-item">Cras justo odio</li>
+							  <li class="list-group-item">Dapibus ac facilisis in</li>
+							  <li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+							<div class="card-body">
+							  <a href="https://www.ko-moto.com/product-page/purple-factory-spec-motor-controller-combo" class="card-link">Card link</a>
+							  <a href="https://electro-flot.ru/catalog/zapchasti_i_aksessuary/" class="card-link">Another link</a>
+							</div>
+						  </div>
+						  <div class="card" style="width: 18rem;">
+							<img src="https://electro-flot.ru/upload/resize_cache/iblock/52d/600_450_140cd750bba9870f18aada2478b24840a/q9idte6afkfvhi383n2ci00vc1yw25u1.png" class="card-img-top" alt="...">
+							<div class="card-body">
+							  <h5 class="card-title"> МАЯТНИК </h5>
+							  <p class="card-text">сурон топ.</p>
+							</div>
+							<ul class="list-group list-group-flush">
+							  <li class="list-group-item">Cras justo odio</li>
+							  <li class="list-group-item">Dapibus ac facilisis in</li>
+							  <li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+							<div class="card-body">
+							  <a href="https://www.ko-moto.com/product-page/purple-factory-spec-motor-controller-combo" class="card-link">Card link</a>
+							  <a href="https://electro-flot.ru/catalog/zapchasti_i_aksessuary/" class="card-link">Another link</a>
+							</div>
+						  </div>
+						<div class="accordion" id="accordion-1">
+							<div class="accordion__item">
+								<h2 class="accordion__header">Описание</h2>
+								<div class="accordion__body">
+									<p class="tovar__text">Мартышки – это небольшие животные, хорошо развитые физически,
+										достаточно
+										подвижные и весьма интересные. Особый интерес представляет их сообразительность,
+										а также
+										невероятное любопытство. Эти животные всегда были героями цирковых номеров и
+										различных шоу,
+										поскольку они легко дрессируются и без проблем контактируют с человеком. Зверьки
+										представляют семейство «мартышковые» и характеризуются маленькими размерами. В
+										это семейство
+										включено несколько видов небольших обезьян.</p>
+
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h2 class="accordion__header">Цена</h2>
+								<div class="accordion__body">
+									<p class="price">
+										250000
+									</p>
+									<button onclick="buy()" id="btn" class="buy">
+										купить
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="maps">
+			<div class="container">
+				<h1 class="maps__title"> забрать обезьяну </h1>
+				<div class="google">
+					<h3 class="google__title"> гугл карта</h3>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4166.139768060755!2d102.4408665747707!3d51.899895382987275!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d08984b74270adb%3A0xce9b61f5f1ebef79!2z0KXRgNGD0YHRgtCw0LvRjNC90YvQuSDQoNGD0YfQtdC5!5e1!3m2!1sru!2sru!4v1707480137265!5m2!1sru!2sru"
+						width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="yandex">
+					<h3 class="yandex__map">
+						яндек карты
+					</h3>
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A87f19560f0f2eb879f052d5503fc6bf0d819a51343737d62e00caaa359ccd159&amp;
+					width=100% &amp;height=554 &amp; lang=ru_RU &amp;scroll=true">
+					</script>
+				</div>
+			</div>
+		</section>
+		<section class="clock">
+			<div class="container container_clock">
+				<div id="time"></div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container container_footer">
+			<p class="footer__text">&copy; мега мартышка </p>
+		</div>
+	</footer>
+	<script src="javascript/theme.js"></script>
+	<script type="text/javascript" src="javascript/button.js"></script>
+	<script type="text/javascript" src="javascript/itc-slider.js"></script>
+	<script type="text/javascript" src="javascript/accordion.js"></script>
+	<script src="javascript/menu.js"></script>
+	<script src="javascript/burger.js"></script>
+	<script src="javascript/time.js"></script>
+	<script src="javascript/time.js"></script>
+	<script src="javascript/bootstrap.js"></script>
+
+</body>
+
+</html>

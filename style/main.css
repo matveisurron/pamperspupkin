@@ -1,0 +1,146 @@
+.tovar_img {
+	width: 100%;
+	
+}
+.price {
+	font-size: 40px;
+}
+.tovar__content {
+	display: flex;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+
+
+.header__menu {
+	position: absolute;
+	z-index: 1;
+	background-color: rgba(192, 192, 192, 0.7);
+	width: 300px;
+	height: 100px;
+	padding: 40px;
+	display: none;
+}
+.is-active {
+	display: block;
+}
+.header {
+	background-color: darkgrey;
+}
+.nav{
+
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo{
+ font-size: 30px;
+}
+.nav__list {
+	list-style: none;
+	display:flex;
+	justify-content: space-between;
+	 width: 50%
+}
+.nav__link {
+	text-decoration: none;
+	color: darkorange;
+	font-size: 20px;
+}
+.nav__link:hover {
+	color: white;
+}
+.nav__super {
+	background-color: darkgray;
+}
+.container_footer {
+	padding: 30px 0;
+}
+.theme__light {
+	height:20px ;
+	width: 20px;
+background-color: snow;
+border-radius: 100%;
+cursor: pointer;
+}
+.theme__dark {
+	height:20px ;
+	width: 20px;
+background-color:black;
+border-radius: 100%;
+cursor: pointer;
+}
+.burger {
+	display: none;
+}
+
+.burger__line {
+	width: 50px; 
+	height: 6px;
+	background-color: black;
+	margin: 10px;
+	transition: 1s ease;
+}
+
+
+
+
+@media screen and (max-width: 1000px){
+	body {
+		overflow-x: hidden;
+	
+	}
+	.nav__list {
+
+		display: flex ;
+			flex-direction: column;
+			background-color: aquamarine;
+			position: absolute;
+			right: 0px;
+			height: 40vh;
+			top: 200px;
+			z-index: 2;
+			align-items: center;
+			width: 50%;
+			transition: transform .5s ease-in;
+			transform: translateX(100%);
+
+	}
+	.nav__list_active {
+		transform: translateX(0%);
+		
+	}
+	.container {
+		max-width: 600px;
+	}
+	.burger {
+		display: block;
+		cursor: pointer;
+	}
+	.active .burger__line_1 {
+transform: rotate(-45deg) translate(-12px, 23px);
+	}
+	.active .burger__line_2 {
+		opacity: 0;
+	}
+	.active .burger__line_3 {
+		transform: rotate(45deg) translate(0px, -12px);
+	}
+	.nav__link{
+		opacity: 0;
+	}
+}
+@keyframes navLinkAnim {
+	from{
+		opacity: 0;
+		transform: translateX(10%);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
